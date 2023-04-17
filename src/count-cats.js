@@ -24,7 +24,7 @@ function countCats(matrix) {
       if (matrix[i][j] === catEars) {
         countCats++;
       }
-    } 
+    }
   }
   return countCats;
 }

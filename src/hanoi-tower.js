@@ -19,8 +19,9 @@ function calculateHanoi(disksNumber, turnsSpeed) {
   // remove line with error and write your code here
   let minTurns = Math.pow(2, disksNumber) - 1;
   let hours = minTurns / turnsSpeed;
-  let sec = Math.floor(hours * 3600); 
-  return {turns: minTurns,
+  let sec = Math.floor(hours * 3600);
+  return {
+    turns: minTurns,
     seconds: sec,
   }
 }

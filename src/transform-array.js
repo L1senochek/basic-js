@@ -18,15 +18,15 @@ function transform(arr) {
   // remove line with error and write your code here
   if (!Array.isArray(arr)) {
     throw new Error(`'arr' parameter must be an instance of the Array!`);
-  } 
+  }
   if (arr.length === 0) {
     return arr;
   }
   let newArr = [];
-//   --discard-next excludes the next element of the array from the transformed array.
-//   --discard-prev excludes the previous element of the array from the transformed array.
-//   --double-next duplicates the next element of the array in the transformed array.
-//   --double-prev duplicates the previous element of the array in the transformed array.
+  //   --discard-next excludes the next element of the array from the transformed array.
+  //   --discard-prev excludes the previous element of the array from the transformed array.
+  //   --double-next duplicates the next element of the array in the transformed array.
+  //   --double-prev duplicates the previous element of the array in the transformed array.
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === '--discard-next') {
       i++;
